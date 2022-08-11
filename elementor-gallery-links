@@ -1,0 +1,38 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+var filteredImages = document.querySelectorAll('.e-gallery-item');
+
+//Edit the links HERE
+var links = [
+'https://element.how/elementor-pop-ups-problems/',
+'https://element.how/elementor-horizontal-scroll-section/',
+'https://element.how/amazing-accordion-section/',
+'https://element.how/awesome-hexagonal-boxes/',
+'https://element.how/show-header-hamburger-click/',
+'https://element.how/elementor-centered-logo-header/',
+'https://element.how/scroll-down-new-add-cart-button/',
+'https://element.how/elementor-ie-internet-explorer-fix/',
+'https://element.how/awesome-hexagonal-boxes/',
+'https://element.how/show-header-hamburger-click/',
+'https://element.how/elementor-centered-logo-header/',
+'https://element.how/scroll-down-new-add-cart-button/',
+'https://element.how/elementor-ie-internet-explorer-fix/'
+];
+
+var _loope = function _loope(i) {
+    if (links[i].length > 4) {
+    filteredImages[i].style.cursor = "pointer";
+filteredImages[i].addEventListener('click', function () {
+location = links[i];
+});
+}
+};
+
+for (var i = 0; i < filteredImages.length; i++) {
+_loope(i);
+}
+
+});
+
+</script>
